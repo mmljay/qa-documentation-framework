@@ -1,0 +1,10 @@
+Title,Section,Type,Priority,Refs,Preconditions,Steps,Expected Result
+Login with valid credentials,Authentication,Functional,High,REQ-101,"User exists","1) Navigate to /login
+2) Enter valid username/password
+3) Submit","User redirected to dashboard; status 200"
+Login with invalid password,Authentication,Negative,Medium,REQ-102,"User exists","1) Navigate to /login
+2) Enter invalid password
+3) Submit","Error message shown; no session created"
+Create order (happy path),Orders,Functional,High,REQ-201,"Authenticated user","1) POST /orders with valid payload","201 Created; orderId returned"
+Create order with missing field,Orders,Negative,Medium,REQ-202,"Authenticated user","1) POST /orders missing required field","400 Bad Request; validation error"
+List users,Users,Functional,Medium,REQ-301,"API available","1) GET /users","200 OK; non-empty response array"

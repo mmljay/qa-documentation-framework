@@ -1,0 +1,4 @@
+Run Name,Description,Included Sections,Milestone
+Release 2025.11 – Smoke,"Pre-release smoke validation for critical flows","Authentication;Users;Orders","2025-Q4"
+Release 2025.11 – Regression,"Full regression including negative and edge cases","Authentication;Users;Orders","2025-Q4"
+Performance Baseline,"Non-functional benchmark suite using JMeter results","Performance","2025-Q4"
